@@ -1,29 +1,63 @@
 package scrabble;
 
-import java.awt.Color;
-import java.awt.Graphics;
+import javax.swing.*;
+import java.awt.*;
 
 public class Tile {
-    public float offset = 0;
-    public int width = 30; 
-    public int height = 30; 
-    public int xPos, yPos;
-    public Color tileColor;
+    public static final int WIDTH = 30;
+    public static final int HEIGHT = 30;
 
-    public Tile(int x, int y) {
+    public TileType tileType;
+    private int xPos, yPos;
+    private Color tileColor;
+
+    public Tile(int x, int y, Color color, TileType tileType) {
         this.xPos = x;
         this.yPos = y;
-    
-    }
-    
-    public Tile(int x, int y, Color color) {
-        this.xPos = x;
-        this.yPos = y;
-        this.tileColor = color; // Set the tile color
+        this.tileColor = color;
+        this.tileType = tileType;
     }
 
+    // Getters and Setters
+    public int getX() {
+        return xPos;
+    }
+
+    public void setX(int x) {
+        this.xPos = x;
+    }
+
+    public int getY() {
+        return yPos;
+    }
+
+    public void setY(int y) {
+        this.yPos = y;
+    }
+
+    public Color getTileColor() {
+        return tileColor;
+    }
+
+    public void setTileColor(Color tileColor) {
+        this.tileColor = tileColor;
+    }
+
+    public TileType getTileType() {
+        return tileType;
+    }
+
+    public void setTileType(TileType tileType) {
+        this.tileType = tileType;
+    }
+
+    // Draw the tile with a border and optional label
     public void draw(Graphics g) {
+        // Draw tile background
         g.setColor(tileColor);
-        g.fillRect(xPos, yPos, width, height);
+        g.fillRect(xPos, yPos, WIDTH, HEIGHT);
+
+
+       
     }
 }

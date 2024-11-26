@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/30506789/OneDrive%20-%20City%20of%20Glasgow%20College/Documents/NetBeansProjects/Scrabble/src/scrabble/Scrabble.java</file>
-            <file>file:/C:/Users/30506789/OneDrive%20-%20City%20of%20Glasgow%20College/Documents/NetBeansProjects/Scrabble/src/scrabble/Tile.java</file>
-            <file>file:/C:/Users/30506789/OneDrive%20-%20City%20of%20Glasgow%20College/Documents/NetBeansProjects/Scrabble/src/scrabble/TileGenerator.java</file>
-            <file>file:/C:/Users/30506789/OneDrive%20-%20City%20of%20Glasgow%20College/Documents/NetBeansProjects/Scrabble/src/scrabble/ColorEnum.java</file>
+            <file>file:/C:/Users/camsd/OneDrive/Desktop/Scrabble/src/scrabble/GameTerminal.java</file>
+            <file>file:/C:/Users/camsd/OneDrive/Desktop/Scrabble/src/scrabble/TileType.java</file>
+            <file>file:/C:/Users/camsd/OneDrive/Desktop/Scrabble/src/scrabble/Scrabble.java</file>
+            <file>file:/C:/Users/camsd/OneDrive/Desktop/Scrabble/src/scrabble/TileGenerator.java</file>
+            <file>file:/C:/Users/camsd/OneDrive/Desktop/Scrabble/src/scrabble/Tile.java</file>
         </group>
     </open-files>
 </project-private>

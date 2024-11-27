@@ -81,15 +81,25 @@ public class TileGenerator extends JPanel {
 
                 // Assign different colors and types to specific positions
                 if ((row == 0 && col == 0) || (row == 0 && col == 14) ||
-                        (row == 14 && col == 0) || (row == 14 && col == 14)) {
+                        (row == 14 && col == 0) || (row == 14 && col == 14) ||
+                        (row == 0 && col == 7) || (row == 7 && col == 0) ||
+                        (row == 14 && col == 7) || (row == 7 && col == 14)) {
                     color = Color.ORANGE;
                     tileType = TileType.TRIPLE_WORD;
                 } else if ((row == 0 && (col == 3 || col == 11)) ||
                            (row == 14 && (col == 3 || col == 11)) ||
                            (col == 0 && (row == 3 || row == 11)) ||
-                           (col == 14 && (row == 3 || row == 11))) {
+                           (col == 14 && (row == 3 || row == 11)) ||
+                            (row == 2) && (col == 6 || col == 8) ||
+                        (row == 3 && col == 7)) {
                     color = Color.CYAN;
                     tileType = TileType.DOUBLE_LETTER;
+                } else if(( (row == 5 && (col == 5 || col == 9)) ||
+                        (row == 9 && (col == 9 || col == 5))) ||
+                        (row == 1 && (col == 9 || col == 5)) ||
+                        (row == 13 && (col == 9 || col == 5))) {
+                    color = Color.magenta;
+                    tileType = TileType.TRIPLE_LETTER;
                 } else if ((row == 1 && (col == 1 || col == 13)) ||
                            (row == 13 && (col == 1 || col == 13)) ||
                            (row == 2 && (col == 2 || col == 12)) ||
@@ -97,9 +107,7 @@ public class TileGenerator extends JPanel {
                            (row == 3 && (col == 3 || col == 11)) ||
                            (row == 11 && (col == 3 || col == 11)) ||
                            (row == 4 && (col == 4 || col == 10)) ||
-                           (row == 5 && (col == 5 || col == 9)) ||
                            (row == 6 && (col == 6 || col == 8)) ||
-                           (row == 9 && (col == 9 || col == 5)) ||
                            (row == 10 && (col == 4 || col == 10)) ||
                            (row == 8 && (col == 6 || col == 8))) {
                     color = Color.PINK;

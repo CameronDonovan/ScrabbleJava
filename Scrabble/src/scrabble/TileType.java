@@ -6,7 +6,7 @@ package scrabble;
 
 /**
  *
- * @author camsd
+ * @author 30506789
  */
 public enum TileType {
     BLANK,

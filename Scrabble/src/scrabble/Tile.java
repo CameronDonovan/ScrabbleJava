@@ -8,8 +8,10 @@ public class Tile {
     public static final int HEIGHT = 30;
 
     public TileType tileType;
+    public String tileLetter;
     private int xPos, yPos;
     private Color tileColor;
+
 
     public Tile(int x, int y, Color color, TileType tileType) {
         this.xPos = x;
@@ -51,13 +53,8 @@ public class Tile {
         this.tileType = tileType;
     }
 
-    // Draw the tile with a border and optional label
     public void draw(Graphics g) {
-        // Draw tile background
         g.setColor(tileColor);
         g.fillRect(xPos, yPos, WIDTH, HEIGHT);
-
-
-       
     }
 }
